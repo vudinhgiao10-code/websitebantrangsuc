@@ -1,0 +1,10 @@
+﻿@using QLCuaHangThoiTrang_63133125.Models;
+@model List<LoaiHang>
+
+
+        @foreach (var item in Model)
+        {
+            <li>
+                <a href="@Url.Action("xemchitietdanhmuc","sanpham63133125", new {@MaLoai=item.MaLoai })" class="dropdown-item"> @item.TenLoai </a>
+            </li>                
+        }

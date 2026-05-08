@@ -1,0 +1,51 @@
+﻿@{
+    ViewBag.Title = "Liên hệ";
+    Layout = "~/Views/Shared/_LayoutClient2.cshtml";
+}
+<style>
+    main {
+        background-color: #f8f9fa;
+        color: #343a40;
+        padding: 40px 0;
+    }
+
+
+    p {
+        line-height: 1.6;
+    }
+
+    ul {
+        list-style-type: disc;
+        margin-left: 20px;
+    }
+
+    li {
+        margin-bottom: 10px;
+    }
+    /* Container Styles */
+    .container {
+        margin: 0 auto;
+    }
+
+    ul li {
+        list-style: none;
+    }
+</style>
+<main aria-labelledby="title">
+    <div class="container">
+        <h2 id="title" style="color: #CC9966;">@ViewBag.Title</h2>
+
+        <div style="margin-top: 20px;">
+            <address style="margin-bottom: 15px;">
+                <strong>Hà Gia Minh</strong><br />
+                ID: 113<br />
+                <abbr title="Phone">Phone:</abbr> 099999999
+            </address>
+
+            <address>
+                <strong>Support:</strong> <a href="mailto:trang.htt.63ttql@ntu.edu.vn" style="color: #28a745;">Support</a><br />
+                <strong>Marketing:</strong> <a href="mailto:trangho254@gmail.com" style="color: #dc3545;">Marketing</a>
+            </address>
+        </div>
+    </div>
+</main>

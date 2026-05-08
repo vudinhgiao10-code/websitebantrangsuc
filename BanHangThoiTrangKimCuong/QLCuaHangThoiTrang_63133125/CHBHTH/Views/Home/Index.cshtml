@@ -1,0 +1,155 @@
+﻿@{
+    ViewBag.Title = "Molla";
+    Layout = "~/Views/Shared/_LayoutClient2.cshtml";
+}
+@using QLCuaHangThoiTrang_63133125.Models;
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!-- Google fonts -->
+    <style>
+
+
+
+        /* Header Styles */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+        }
+
+            header img {
+                max-width: 100%;
+                height: auto;
+            }
+
+        /* Featured Images Styles */
+        .spnoibat {
+            margin-top: 20px;
+        }
+
+            .spnoibat img {
+                border: 2px solid #ddd;
+                border-radius: 8px;
+                margin-bottom: 15px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+
+                .spnoibat img:hover {
+                    transform: scale(1.05);
+                    transition: transform 0.3s ease-in-out;
+                }
+
+        /* Centered Content Styles */
+        .text-center {
+            text-align: center;
+        }
+
+        /* Responsive Design */
+        img.img-responsive {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Vibrant Colors */
+        body {
+            background-color: #f8f9fa;
+            color: #343a40;
+        }
+
+        .spnoibat img {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        ul li {
+            list-style-type: none;
+        }
+
+        /* Tawk.to Button Style (Chat Button) */
+        #tawk-to-chat-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #007bff;
+            color: white;
+            padding: 15px 20px;
+            border-radius: 50%;
+            font-size: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            z-index: 1000;
+        }
+    </style>
+    <title>Kim Cương</title>
+</head>
+<body>
+    <br />
+    <header class="bg-body py-0">
+        <center>
+            <div class="container">
+                <div class="col-lg-12 col-md-8">
+                    <img src="~/Images/TRANGCHU13.jpg" />
+                </div>
+            </div>
+        </center>
+    </header>
+    <br />
+    <div class="spnoibat">
+        <center>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="~/Images/" class="img-responsive" alt="" />
+                </div>
+                <div class="col-md-4">
+                    <img src="~/Images/" class="img-responsive" alt="" />
+                </div>
+                <div class="col-md-4">
+                    <img src="~/Images/" class="img-responsive" alt="" />
+                </div>
+            </div>
+        </center>
+    </div>
+    <br />
+
+    @Html.Action("suapartial", "sanpham63133125")
+
+    @Html.Action("dauanpartial", "sanpham63133125")
+    <div class="bg-body py-0">
+        <center>
+            <div class="container">
+                <div class="col-lg-12 col-md-8">
+                    <img src="~/Images/TRANGCHU14.jpg" />
+                </div>
+            </div>
+        </center>
+    </div>
+    <br />
+
+    @Html.Action("raupartial", "sanpham63133125")
+
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/67497d9f4304e3196aea49cc/1idrh5ror';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
+    <!-- Tạo nút Chat tùy chỉnh để mở Tawk.to widget -->
+    <button id="tawk-to-chat-btn">
+        💬
+    </button>
+
+    <!-- Script để mở Tawk.to chat khi bấm nút -->
+    <script>
+        document.getElementById('tawk-to-chat-btn').addEventListener('click', function () {
+            Tawk_API.toggle();  // Điều khiển mở/đóng chat widget
+        });
+    </script>
+</body>
+</html>

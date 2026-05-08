@@ -1,0 +1,79 @@
+﻿@model IEnumerable<QLCuaHangThoiTrang_63133125.Models.DonHang>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutClient2.cshtml";
+}
+
+<div class="container pt-3">
+    <h2 style="color: #CC9966; text-align:center">Danh sách đơn hàng</h2>
+
+
+    <table class="table">
+        <tr>
+            <th>
+                Họ tên
+            </th>
+            <th>
+                Ngày đặt
+            </th>
+            <th>
+                Tình trạng đơn hàng
+            </th>
+            <th>
+                Thanh toán
+            </th>
+            <th>
+                Địa chỉ nhận hàng
+            </th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TaiKhoan.HoTen)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NgayDat)
+                </td>
+                <td>
+                    @{ if (@item.TinhTrang == 0)
+                        {
+                            <h5 style="color:red">Đang chờ xác nhận. </h5>
+                        }
+                        else if (@item.TinhTrang == 1)
+                        {
+                            <h5 style="color:green">Đã xác nhận </h5>
+                        }
+                        else
+                        {
+                            <h5 style="color:orangered">Đang chờ xác nhận </h5>
+                        }
+                    }
+                </td>
+                <td>
+                    @{ if (@item.ThanhToan == 1)
+                        {
+                            <div style="color:red">Thanh toán tiền mặt</div>
+                        }
+                        else if (@item.ThanhToan == 2)
+                        {
+                            <div style="color:brown">Thanh toán chuyển khoản</div> }
+                    }
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DiaChiNhanHang)
+                </td>
+                <td>
+                    <button class="btn-dark Text-decoration:none">
+                        @Html.ActionLink("Chi tiết", "Details", new { id = item.MaDon }, new { })
+                    </button>
+
+                </td>
+            </tr>
+        }
+
+    </table>
+
+</div>
