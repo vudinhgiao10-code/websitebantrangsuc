@@ -1,29 +1,29 @@
-# Jewelry E-commerce Website
+# Website Thương Mại Điện Tử Trang Sức
 
-## Project Overview
-This is a specialized e-commerce platform developed for the jewelry industry. The system provides a seamless shopping experience for customers and a comprehensive administration dashboard for store owners.
+## Tổng quan dự án
+Đây là nền tảng thương mại điện tử chuyên biệt cho ngành trang sức. Hệ thống cung cấp trải nghiệm mua sắm mượt mà cho khách hàng và bảng điều khiển quản trị toàn diện cho chủ cửa hàng.
 
-## Technology Stack
+## Công nghệ sử dụng
 - Backend: ASP.NET MVC 5, C#
-- Database: SQL Server, Entity Framework
+- Cơ sở dữ liệu: SQL Server, Entity Framework
 - Frontend: HTML5, CSS3, JavaScript, Bootstrap, jQuery
-- Tools: Visual Studio, Git/GitHub, CKEditor & CKFinder
+- Công cụ: Visual Studio, Git/GitHub, CKEditor & CKFinder
 
-## Core Features
+## Các chức năng chính
 
-### User Side
-- Product catalog with smart category filtering.
-- Detailed product views with high-quality images and specifications.
-- Online shopping cart and order tracking system.
+### Phân hệ người dùng
+- Danh mục sản phẩm với bộ lọc thông minh theo loại hàng.
+- Xem chi tiết sản phẩm với hình ảnh chất lượng cao và thông số kỹ thuật.
+- Giỏ hàng trực tuyến và hệ thống theo dõi đơn hàng.
 
-### Administration Side (Admin)
-- Inventory management (Products and Categories).
-- Order fulfillment and customer feedback processing.
-- Content management (News, Promotions) via CKEditor.
-- Sales statistics and user account control.
+### Phân hệ quản trị (Admin)
+- Quản lý kho hàng (Sản phẩm và Danh mục).
+- Xử lý đơn hàng và phản hồi của khách hàng.
+- Quản lý nội dung (Tin tức, Khuyến mãi) qua trình soạn thảo CKEditor.
+- Thống kê doanh thu và quản lý tài khoản người dùng.
 
-## Key Achievements
-- Fully functional end-to-end e-commerce workflow.
-- Responsive design compatible with Desktop, Tablet, and Mobile devices.
-- Intuitive Admin Dashboard for non-technical users.
-- Optimized database and clean code architecture for scalability.
+## Kết quả đạt được
+- Xây dựng hoàn thiện quy trình thương mại điện tử từ chọn hàng đến đặt hàng.
+- Giao diện tương thích (Responsive) tốt trên máy tính, máy tính bảng và điện thoại.
+- Hệ thống quản trị trực quan, dễ sử dụng cho người dùng không chuyên kỹ thuật.
+- Cấu trúc cơ sở dữ liệu và mã nguồn tối ưu, dễ dàng mở rộng.
